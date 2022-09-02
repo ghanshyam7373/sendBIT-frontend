@@ -1,53 +1,106 @@
+:root {
+  --primary-color: #fff;
+  color-scheme: light dark;
+}
+
 body {
-    height: 100%;
-    /* background-color: rgb(31, 30, 30); */
-  }
-  .server{
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  .server-logo > img {
-    height: 80px;
-    width: 80px;
-  }
-  .server-logo > p{
-    font-size: 12px;
-    color: #ff6600;
-    font-weight: 600;
-  }
-  .server-logo > h6{
-    font-size: max(10px,15px);
-  }
-  .logo {
-    width: 180px;
-    height: auto;
-    object-fit: contain;
-  }
-  .icons{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    width: 100%;
-  }
-  .btnicon{
-    border: 0;
-    border-radius: 50%;
-  }
-  .btnicon:hover{
-    background-color: rgb(213, 213, 213);
-  }
-  .btnicon, .alogo{
-    z-index: 10;
-    margin-top: 10px;
-  }
-  input[type=checkbox]{
-    display: none;
-  }
-.navicons{
-  font-size:20px;
+  --text-color: #000;
+  --bg-color: #fff;
+  transition: all 300ms ease-in;
+}
+
+body.dark-theme {
+  --text-color: #fff;
+  --bg-color: #000;
+}
+
+body {
+  height: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+.server {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.server-logo>img {
+  height: 80px;
+  width: 80px;
+}
+
+.server-logo>p {
+  font-size: 12px;
+  color: #ff6600;
+  font-weight: 600;
+}
+
+.server-logo>h6 {
+  font-size: max(10px, 15px);
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  justify-content: end;
+  width: 100%;
+}
+
+.btnicon {
+  border: 0;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+  border-radius: 50%;
+}
+
+.btnicon:hover {
+  background-color: rgb(196, 196, 196);
+  border-radius: 50%;
+}
+
+.btnicon,
+.alogo {
+  z-index: 10;
+  margin-top: 10px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.navicons {
+  font-size: 20px;
   padding: 10px;
+}
+
+#server-name #infoicon #modeicon {
+  color: var(--text-color);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --text-color: #fff;
+    --bg-color: #000;
+  }
+
+  body.light-theme {
+    --text-color: #000;
+    --bg-color: #fff;
+  }
+
+
 }

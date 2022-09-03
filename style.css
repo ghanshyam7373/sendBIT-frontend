@@ -19,8 +19,6 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
-
-
 .server {
   text-align: center;
   position: absolute;

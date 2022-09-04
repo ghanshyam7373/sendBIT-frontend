@@ -1,4 +1,5 @@
-(()=>{
+
+const themes = ()=>{
 
 
 let themeBtn = document.getElementById("modecheck");
@@ -31,5 +32,17 @@ themeBtn.addEventListener("click", () => {
   document.getElementById("navlogo").src = theme == 'dark' ? '/assets/light-logo.png':'/assets/dark-logo.png' 
   localStorage.setItem("theme", theme);
 });
-})();
+};
+themes();
 
+// about page js
+document.getElementById('backtohome').addEventListener('click',() =>{
+  document.querySelector('about').style.display = "none";
+  document.querySelector('main').style.display = "block";
+  themes;
+})
+
+document.getElementById('infoicon').addEventListener('click',() =>{
+  document.querySelector('main').style.display ="none";
+  document.querySelector('about').style.display ="block";
+})

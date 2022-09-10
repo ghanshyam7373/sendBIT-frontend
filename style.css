@@ -86,21 +86,21 @@ input[type=checkbox] {
 #server-name #infoicon #modeicon {
   color: var(--text-color);
 }
-.left-space, .right-space{
+#left-space, #right-space{
   width: 30%;
   height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   z-index: 10;
 }
-.left-space{
+#left-space{
   position: absolute;
   left: 10%;
   top: 10%;
 }
-.right-space{
+#right-space{
   position: absolute;
   left: 60%;
   top: 10%;
@@ -108,14 +108,10 @@ input[type=checkbox] {
 .element{
   text-align: center;
 }
-.left-space svg, .right-space svg{
-  width: 30px;
-  height: auto;
-}
-.left-space p, .right-space p{
+#left-space p, #right-space p{
   margin: 0;
 }
-.left-space i, .right-space i{
+#left-space i, #right-space i{
   font-size: 13px;
   color: grey;
 }
@@ -172,24 +168,20 @@ input[type=checkbox] {
     padding: 10px !important;
     margin-top: 50px;
   }
-  .left-space{
+  #left-space{
     position: absolute;
     left: 0%;
     top: 10%;
   }
-  .right-space{
+  #right-space{
     position: absolute;
     left: 70%;
     top: 10%;
   }
-  .left-space p,.right-space p{
+  #left-space p,#right-space p{
     font-size: 10px;
   }
-  .left-space svg, .right-space svg{
-    width: 22px;
-    height: auto;
-  }
-  .left-space i, .right-space i{
+  #left-space i, #right-space i{
     font-size: 10px;
     color: grey;
   }
@@ -199,7 +191,7 @@ input[type=checkbox] {
     margin-top: 20px;
   }
 }
-  @media only screen and (min-width: 551px) and (max-width: 680px){
+  @media only screen and (min-width: 551px) and (max-width: 768px){
   .server-logo>img {
     height: 60px;
     width: 60px;
@@ -218,22 +210,18 @@ input[type=checkbox] {
     padding: 12px !important;
     margin-top: 50px;
   }
-  .left-space{
+  #left-space{
     position: absolute;
     left: 0%;
     top: 10%;
   }
-  .right-space{
+  #right-space{
     position: absolute;
     left: 70%;
     top: 10%;
   }
-  .left-space p,.right-space p{
+  #left-space p,#right-space p{
     font-size: 12px;
-  }
-  .left-space svg, .right-space svg{
-    width: 25px;
-    height: auto;
   }
   .footerText h4{
     font-size: 15px;

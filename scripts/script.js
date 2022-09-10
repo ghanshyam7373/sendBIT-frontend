@@ -47,3 +47,15 @@ window.backgroundAnimation = () => {
 
 init();
 animate();
+
+// to open files
+const importData = () => {
+  let input = document.createElement('input');
+  input.type = 'file';
+  input.onchange = _ => {
+    let files =   Array.from(input.files);
+            console.log(files);
+        };
+  input.click();
+  
+}

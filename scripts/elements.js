@@ -51,3 +51,18 @@ let Name = 'Polly';
 let device = 'Windows Chrome';
 // otherDeviceLoad(Name,device,imgUrl);
 
+
+
+// modals
+const openModal = (filename,size) =>{
+    document.getElementById('modalClick').click();
+    setModalvalues(filename,size)
+}
+
+const setModalvalues = (filename,size) =>{
+    document.getElementById('modalFileName').innerText = filename
+    document.getElementById('modalFileSize').innerText = size
+}
+
+// Method to open modal with the params filename and size
+// openModal('Picture.png','3 Kb')

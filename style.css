@@ -301,3 +301,23 @@ footer h6,.abouticons{
   width: 14px;
   margin: 0px 2px 5px 2px;
 }
+
+canvas{
+  z-index: -1;
+}
+
+/* modal css */
+.modal-footer button{
+  background: none;
+  border: none;
+  color: #ff6600;
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+}
+.modal-footer button:hover{
+  color:#ef7423;
+  border: #ef7423 0.5px solid;
+}
+#modalClick{
+  display: none;
+}

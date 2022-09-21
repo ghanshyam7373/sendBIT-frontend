@@ -49,7 +49,7 @@ const otherDeviceLoad = (name, device, imgUrl) => {
 let imgUrl = 'assets/laptop.svg';
 let Name = 'Polly';
 let device = 'Windows Chrome';
-// otherDeviceLoad(Name,device,imgUrl);
+otherDeviceLoad(Name,device,imgUrl);
 
 
 

@@ -83,7 +83,7 @@ input[type=checkbox] {
   padding: 10px;
 }
 
-#server-name #infoicon #modeicon, #infoicon, .cross svg, .logo_data>p, footer h6,.abouticons, .abouticons svg {
+#server-name #infoicon #modeicon {
   color: var(--text-color);
 }
 #left-space, #right-space{
@@ -245,6 +245,7 @@ about{
 .cross svg{
   width: 2.5vw;
   height: auto;
+  color: white;
   margin-top: 10px;
   z-index: 10;
 }
@@ -265,13 +266,15 @@ about{
 #server-logo-about{
   height: 80px;
   width: 80px;
+  filter: brightness(0) invert(1);
 }
 
 .logo_data>p {
   font-size: 13px;
+  color: #ffffff;
   font-weight: 600;
 }
-#fulllogo{
+#fullwhitelogo{
   width: 10rem !important;
   height: auto;
 }
@@ -290,9 +293,11 @@ footer{
 }
 footer h6,.abouticons{
   display: inline;
+  color: white;
   font-size: 14px;
 }
 .abouticons svg{
+  color: white;
   width: 14px;
   margin: 0px 2px 5px 2px;
 }

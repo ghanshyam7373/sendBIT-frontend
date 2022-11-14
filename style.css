@@ -83,7 +83,7 @@ input[type=checkbox] {
   padding: 10px;
 }
 
-#server-name #infoicon #modeicon, #infoicon, .cross svg, .logo_data>p, footer h6,.abouticons, .abouticons svg {
+#server-name #infoicon #modeicon, #infoicon{
   color: var(--text-color);
 }
 #left-space, #right-space{
@@ -243,6 +243,7 @@ about{
   cursor: pointer;
 }
 .cross svg{
+  color: white;
   width: 2.5vw;
   height: auto;
   margin-top: 10px;
@@ -265,9 +266,11 @@ about{
 #server-logo-about{
   height: 80px;
   width: 80px;
+  filter: brightness(0) invert(1);
 }
 
 .logo_data>p {
+  color: white;
   font-size: 13px;
   font-weight: 600;
 }
@@ -291,10 +294,12 @@ footer{
 footer h6,.abouticons{
   display: inline;
   font-size: 14px;
+  color: white;
 }
 .abouticons svg{
   width: 14px;
   margin: 0px 2px 5px 2px;
+  color: white;
 }
 
 canvas{

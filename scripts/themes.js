@@ -8,10 +8,10 @@ let currentTheme = localStorage.getItem("theme");
 
 if (currentTheme == "dark") {
   document.body.classList.toggle("dark-theme");
-  document.getElementById("navlogo").src = "/assets/light-logo.png";
+  document.getElementById("navlogo").src = "https://res.cloudinary.com/duoe2yt88/image/upload/v1668437395/Images/light-logo_kugpz0.png";
 } else if (currentTheme == "light") {
   document.body.classList.toggle("light-theme");
-  document.getElementById("navlogo").src = "/assets/dark-logo.png";
+  document.getElementById("navlogo").src = "https://res.cloudinary.com/duoe2yt88/image/upload/v1668437395/Images/dark-logo_bab8me.png";
 }
 
 themeBtn.addEventListener("click", () => {
@@ -29,7 +29,7 @@ themeBtn.addEventListener("click", () => {
       ? "dark"
       : "light";
   }
-  document.getElementById("navlogo").src = theme == 'dark' ? '/assets/light-logo.png':'/assets/dark-logo.png'; 
+  document.getElementById("navlogo").src = theme == 'dark' ? 'https://res.cloudinary.com/duoe2yt88/image/upload/v1668437395/Images/light-logo_kugpz0.png':'https://res.cloudinary.com/duoe2yt88/image/upload/v1668437395/Images/dark-logo_bab8me.png'; 
   localStorage.setItem("theme", theme);
 });
 };

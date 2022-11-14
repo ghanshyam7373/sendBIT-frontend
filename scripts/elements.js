@@ -36,17 +36,19 @@ const createDivElement = (name, device, imgUrl) => {
 const otherDeviceLoad = (name, device, imgUrl) => {
     if (!(leftSpace.childNodes.length === 3 && rightSpace.childNodes.length === 3)) {
         if (flag === 0) {
-            leftSpace.append(createDivElement('Sammy', 'Windows Chrome', 'assets/laptop.svg'));
+            // laptop image: https://res.cloudinary.com/duoe2yt88/image/upload/v1668437443/Images/laptop_yjom1q.svg
+            leftSpace.append(createDivElement('Sammy', 'Windows Chrome', 'https://res.cloudinary.com/duoe2yt88/image/upload/v1668437443/Images/laptop_yjom1q.svg'));
             flag = 1;
         }
         else {
-            rightSpace.append(createDivElement('Sammy', 'Windows Chrome', 'assets/laptop.svg'));
+            // mobile image: https://res.cloudinary.com/duoe2yt88/image/upload/v1668437443/Images/mobile_qeibtw.svg
+            rightSpace.append(createDivElement('Sammy', 'Windows Chrome', 'https://res.cloudinary.com/duoe2yt88/image/upload/v1668437443/Images/mobile_qeibtw.svg'));
             flag = 0;
         }
     }
 }
 
-let imgUrl = 'assets/laptop.svg';
+let imgUrl = 'https://res.cloudinary.com/duoe2yt88/image/upload/v1668437443/Images/laptop_yjom1q.svg';
 let Name = 'Polly';
 let device = 'Windows Chrome';
 otherDeviceLoad(Name,device,imgUrl);

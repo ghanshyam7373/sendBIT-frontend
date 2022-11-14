@@ -9,9 +9,13 @@ let currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
   document.body.classList.toggle("dark-theme");
   document.getElementById("navlogo").src = "/assets/light-logo.png";
+  document.getElementById("fulllogo").src = "assets/full-white-logo.png";
+  document.getElementById('server-logo-about').style.filter = "brightness(0) invert(1)";
 } else if (currentTheme == "light") {
   document.body.classList.toggle("light-theme");
   document.getElementById("navlogo").src = "/assets/dark-logo.png";
+  document.getElementById("fulllogo").src = "assets/full-dark-logo.png";
+  document.getElementById('server-logo-about').style.filter = "brightness(0) saturate(100%)";
 }
 
 themeBtn.addEventListener("click", () => {
@@ -29,7 +33,7 @@ themeBtn.addEventListener("click", () => {
       ? "dark"
       : "light";
   }
-  document.getElementById("navlogo").src = theme == 'dark' ? '/assets/light-logo.png':'/assets/dark-logo.png' 
+  document.getElementById("navlogo").src = theme == 'dark' ? '/assets/light-logo.png':'/assets/dark-logo.png'; 
   localStorage.setItem("theme", theme);
 });
 };
@@ -45,4 +49,5 @@ document.getElementById('backtohome').addEventListener('click',() =>{
 document.getElementById('infoicon').addEventListener('click',() =>{
   document.querySelector('main').style.display ="none";
   document.querySelector('about').style.display ="block";
+  themes;
 })
